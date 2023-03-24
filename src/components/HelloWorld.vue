@@ -37,10 +37,14 @@ export default {
     msg: String
   }
 }
+import "../styles/flowers.css"
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/* @import '../styles/flowers.css';
+main.js也可以引入样式import '../styles/flowers.css'; */
+
 h3 {
   margin: 40px 0 0;
 }

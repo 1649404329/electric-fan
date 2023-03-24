@@ -1,22 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App !"/>
+    <flowers/>
+    <img alt="Vue logo" src="./assets/logo.png" class='fanfanhover'>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <fan/>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import flowers from './components/flowers.vue'
+import fan from './components/fan.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    flowers,
+    fan
   }
 }
 </script>
 
 <style>
+@import "./styles/fan.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
